@@ -1,4 +1,4 @@
-# 네이버 로그인 페이지 구현
+![image](https://github.com/SEUNGJUNHWANG/js-homework/assets/148776199/9bb60287-568f-4c67-a636-ac587a54ff34)# 네이버 로그인 페이지 구현
 
 ---
 
@@ -12,6 +12,9 @@
 
 먼저 1번 2번 과정은 로그인폼에 입력된 ID 와 PW값이 
 만약 (if문 사용하기) 정규표현식으로 정의된 올바른 양식에 적합하다면 에러메세지를 띄우지 않고 적합하지 않다면 에러메세지를 띄우는 단계입니다.
+![image](https://github.com/SEUNGJUNHWANG/js-homework/assets/148776199/07a2f3c8-71c7-4890-9889-0336a175a919)
+
+
 
 이 과정을 수행하기 위해 함수 emailIdValidation 과 emailPwValidation 을 만들어 정규표현식에 입력된 값이 적합한지(true) 또는 적합하지 않은지(false)에 따라
 클래스 is--invalid 를 빼거나(remove) 넣어주는(add) 동작을 수행하도록 합니다.
