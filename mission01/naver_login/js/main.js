@@ -25,9 +25,9 @@ function emailIdValidation() {
   }
 }
 
-// addEventListener 를 사용시에는 함수에 함수명만 넣어야한다. ()를 포함하면
-// 이벤트의 호출의 여부와 관계없이 함수가 실행되게된다.
-// 왜 "input" 대신 "keyup"은 안될까?
+//  addEventListener 를 사용시에는 함수에 함수명만 넣어야한다.
+//  ()를 포함하면 이벤트의 호출의 여부와 관계없이 함수가 실행되게된다.
+//  왜 "input" 대신 "keyup"은 안될까?
 inputEmailId.addEventListener("input", emailIdValidation);
 
 // 2번
