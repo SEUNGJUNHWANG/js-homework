@@ -24,9 +24,13 @@ function emailIdValidation() {
     inputEmailId.classList.add("is--invalid");
   }
 }
-// 왜 안되는지 고민해보자!!!!!!!!!!!!!!!
-inputEmailId.addEventListener("input", emailIdValidation());
 
+// addEventListener 를 사용시에는 함수에 함수명만 넣어야한다. ()를 포함하면
+// 이벤트의 호출의 여부와 관계없이 함수가 실행되게된다.
+// 왜 "input" 대신 "keyup"은 안될까?
+inputEmailId.addEventListener("input", emailIdValidation);
+
+// 2번
 // querySelector 안에 선택자에 클래시 입력시 . 빼먹는것 주의
 const inputEmailPw = document.querySelector(".user-password-input");
 
@@ -52,10 +56,11 @@ function pwReg(text) {
   return re.test(String(text).toLowerCase());
 }
 
+// 3번
 const loginBtn = document.querySelector(".btn-login");
 
 function handleLoginValidation(e) {
-  e.preventDefault();
+  e.preventDefault(); //preventDefault를 사용하는 이유는
   if (inputEmailId.value === user.id && inputEmailPw.value === user.pw) {
     console.log("로그인 완료");
     location.href = "welcome.html";
