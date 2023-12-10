@@ -1,4 +1,4 @@
-![image](https://github.com/SEUNGJUNHWANG/js-homework/assets/148776199/9bb60287-568f-4c67-a636-ac587a54ff34)# 네이버 로그인 페이지 구현
+# 네이버 로그인 페이지 구현
 
 ---
 
